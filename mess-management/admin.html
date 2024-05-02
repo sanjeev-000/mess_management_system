@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<style>
+body{
+	
+background-image: url("san.JPEG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:100% 100%;
+
+}
+
+input[type=password] {
+  border: 2px solid #555;
+ 
+   border-radius: 12px;
+  padding: 20px;
+  height:5%;
+margin: 8px 0;
+  box-sizing: border-box;
+	
+}
+
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color:#f9f9f9;
+  background-color: #6a5acd;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+
+input[type=submit]:hover {background-color: #6a5acd}
+
+input[type=submit]:active {
+  background-color:#6a5acd;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+header {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+}
+</style>
+
+
+
+<body>
+<center>
+<form method="POST" action="logg.php" onsubmit="return validate();">
+
+<header>
+<h3>admin</h3>
+</header></br></br>
+
+<label for="password"> password </label>
+<input type="password" placeholder="password" size="25" id="cpassword" name="password">
+<span id="errorpassword"></span></br></br>
+
+<input type="submit" name="login" value="submit" >
+</form>
+</center>
+
+<script>
+  function validate()
+{
+const name=document.getElementById("cpassword");
+const errorname=document.getElementById("errorpassword");
+
+if(name.value==""){
+	errorname.innerText="password not be null";
+	return false;
+}
+else if(name.value.length<8){
+	errorname.innerText="password must be 8 letters" ;
+	return false;
+}
+else{
+	errorname.innerText=" " ;
+}
+}
+</script>
+
+</body>
+</html>
+
+

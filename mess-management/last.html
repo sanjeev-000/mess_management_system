@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mess Management System</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>   
+        <script src="page.js"></script>
+    </head>
+    <body>
+        <header class="bg-primary text-white text-center py-3">
+        <h1>Mess Management System</h1>
+        <p>Welcome to our mess..!</p>
+        </header>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-header">
+                   <b> Mess Admin Details </b>
+                </div></br>
+                    <div class="card-body">
+                        <p><strong>Name:</strong> Rahul</p>
+                        <p><strong>Contact:</strong> 9390882460</p>
+                        <p><strong>Email:</strong> rahulrgukt123@gmail.com</p>
+                    </div>
+            </div>
+        </div></br></br>
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header bg-dark text-light">
+                    MESS MENU
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            Breakfast: idly,bread,tea
+                        </li>
+                        <li>
+                            Lunch: rice,dal,curry
+                        </li>
+                        <li>
+                            Dinner: roti,card,raita
+                        </li>
+           `        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+<section class="container my-5">
+    <div class="card">
+        <div class="card-header bg-dark text-light" >
+            Leave a Message
+        </div>
+        <div class="card-body">
+            <form action="last.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="mess no" class="form-label">Mess Number</label>
+                    <input type="text" class="form-control" id="mess no" name="number" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea type="text" class="form-control" id="message" rows=4 name="message" required>enter reason for leave</textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Apply</button>
+    
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+    &copy. 2023 Mess Management System. All rights reserved.
+</footer>
+</body>
+</html>

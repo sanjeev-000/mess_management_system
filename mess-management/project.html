@@ -1,0 +1,98 @@
+<html>
+    
+<head>
+<style>
+body{
+       background-image: url('ab4.jpg');
+  }
+
+input[type=text] {
+  border:  3px solid #555;
+  border-radius: 12px;
+
+  padding:  20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+height:5%;	
+}
+
+input[type=email] {
+  border: 2px solid #555;
+ 
+   border-radius: 12px;
+  padding: 20px;
+  height:5%;
+margin: 8px 0;
+  box-sizing: border-box;
+	
+}
+
+
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color:#f9f9f9;
+  background-color: #6a5acd;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+
+input[type=submit]:hover {background-color: #6a5acd}
+
+input[type=submit]:active {
+  background-color:#6a5acd;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+  header {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+}
+
+</style>
+<script src="project.js" defer>
+
+</script>
+
+</head>
+
+
+<body>
+<form method="POST" action="log.php" onsubmit="return validate();">
+</br></br>
+<center>
+<header>
+<h1> RGUKT RKVALLEY</h1>
+</header>
+</br>
+<header>
+<h3>student</h3>
+</header>
+<input type="text" placeholder="user name"  size="25" id="name" name="username" >
+<span id="errorname"></span>
+</br></br>
+<input type="email" placeholder="user email" size="25" id="email" name="useremail">
+<span id="erroremail"></span>
+</br></br>
+
+<a href="" target="_blank" >
+<input type="submit" name="login" value="submit"> </a>
+</br></br>
+
+<a href="admin.html">if your admin..?</a>
+
+</form>
+</center>
+
+
+</body>
+</html>
